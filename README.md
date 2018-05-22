@@ -1,5 +1,6 @@
 # homework
 This is the homework assignment with the following instructions:
+
 Question 1: Please write a Python script that:
 1. Reads the JSON located at http://mysafeinfo.com/api/data?list=englishmonarchs&format=json
 2. Outputs a JSON object consisting of lists of unique 'nm', grouped by 'cty' and 'hse'
@@ -26,6 +27,7 @@ Example output:
 ] 
 } 
 }
+
 Question 2: Please write a Python script that:
 1. Reads the JSON located at https://data.cityofnewyork.us/api/views/25th-nujf/rows.json
 2. Maps the 'name' from each field in "columns", available at JSON_ROOT['meta']['view']['columns'], to each list inside JSON_ROOT['data']. (e.g. the name of the first field listed in "columns" is the name of the first item in each list in "data")
