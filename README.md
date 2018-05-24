@@ -1,37 +1,31 @@
 # homework
 This is the homework assignment with the following instructions:
 
-Question 1: Please write a Python script that:
-1. Reads the JSON located at http://mysafeinfo.com/api/data?list=englishmonarchs&format=json
-2. Outputs a JSON object consisting of lists of unique 'nm', grouped by 'cty' and 'hse'
-Example output:
+Here is the HW for the Python Tools Engineer role:
+ 
+1) Write a python program to rotate integer array elements by shift (user-input). Do this without using another array or without moving any element of the input array multiple times.
+e.g. python array_rotate.py <shift_size> <csv_int_array)
+python array_rotate.py 3 10,11,14,15
+This should produce output : 11,14,15,10
+
+2) Write a python program to read input json from : http://mysafeinfo.com/api/data?list=englishmonarchs&format=json
+and create list of uniq 'nm' by 'cty' and 'hse'.
+e.g. Output json should look like :
 {
-"cty1": {
-"hse1": [
-"name1", 
-"name2"
-],
-"hse2": [
-"name1", 
-"name2" 
-] 
-},
-"cty2": {
-"hse3": [
-"name1", 
-"name2"
-],
-"hse4": [
-"name1", 
-"name2" 
-] 
-} 
+"United Kingdom" : {
+"House of Blois" : ["Stephen"],
+...
+}
+...
 }
 
-Question 2: Please write a Python script that:
-1. Reads the JSON located at https://data.cityofnewyork.us/api/views/25th-nujf/rows.json
-2. Maps the 'name' from each field in "columns", available at JSON_ROOT['meta']['view']['columns'], to each list inside JSON_ROOT['data']. (e.g. the name of the first field listed in "columns" is the name of the first item in each list in "data")
-3. Outputs a JSON file containing only data for the following fields: ["Child's First Name", "Gender", "Ethnicity", "Year of Birth", "Rank", "Count"]
-4. Filters the aforementioned data to only the years 2012-2014, then groups by "Child's First Name" and "Ethnicity", and finally provides the sum of "Count" for each combination.
-5. Writes the resulting data to both JSON and CSV.
+3) Write a python program to read input json from http://mysafeinfo.com/api/data?list=englishmonarchs&format=json
+and write the data to local file called "/tmp/converter_input.json" Then create another file called ?/tmp/converter_input.csv" to dump the data in csv file format.
+Don?t use python CSV modules.
+
+4) Write a shell script to sum the sizes of all files in input dir.
+- Must be shell (no python)
+- Only include regular files (no directly, don?t follow any symlinks)
+- Print the size in bytes as well as human readable format
+
  
