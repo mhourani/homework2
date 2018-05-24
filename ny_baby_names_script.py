@@ -6,6 +6,7 @@ import pandas
 #read baby names
 
 import json, urllib.request
+
 with urllib.request.urlopen("https://data.cityofnewyork.us/api/views/25th-nujf/rows.json") as jsonFile:
     data = json.loads(jsonFile.read().decode())
 
